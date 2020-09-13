@@ -8,12 +8,10 @@
     tools:context=".fragment.NewsPaperFrag">
 
 <LinearLayout
-    android:id="@+id/linearlayout"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
         android:layout_width="393dp"
         android:layout_height="62dp"
         android:layout_marginLeft="5dp"
@@ -23,7 +21,6 @@
         android:background="@drawable/borderedt"
         android:theme="?attr/actionBarTheme">
         <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navigationView"
             android:layout_width="44dp"
             android:layout_height="6dp"
             android:layout_marginTop="14dp"
