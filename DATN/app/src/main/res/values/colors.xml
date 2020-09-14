@@ -5,4 +5,6 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="seeall">#57C6F8</color>
     <color name="border">#686868</color>
+    <color name="bg_status_bar">#259CF8</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
 </resources>
