@@ -19,8 +19,6 @@ public class LoginActivity extends BaseActivity {
         setContentView(R.layout.activity_login);
 
         initView();
-        //set màu cho status bar
-        setMyColorStatusBar(R.color.bg_status_bar);
 
         //set text gạch chân
         btnQuenMatKhau.setText(Html.fromHtml("<u>Quên mật khẩu?</u>"));

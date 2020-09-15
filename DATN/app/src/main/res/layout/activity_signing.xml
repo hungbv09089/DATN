@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tip_ten"
+        android:id="@+id/tip_pass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:imeOptions="actionNext"
@@ -68,8 +68,8 @@
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:hint="Họ và tên"
-            android:singleLine="true"
             android:nextFocusDown="@id/edt_sdt"
+            android:singleLine="true"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
             android:textCursorDrawable="@null"></com.google.android.material.textfield.TextInputEditText>
@@ -87,15 +87,15 @@
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="@+id/tip_pass_cf"
         app:layout_constraintStart_toStartOf="@+id/tip_pass_cf"
-        app:layout_constraintTop_toBottomOf="@+id/tip_ten">
+        app:layout_constraintTop_toBottomOf="@+id/tip_pass">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_sdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:singleLine="true"
             android:backgroundTint="#FFFFFF"
             android:hint="Số điện thoại"
+            android:singleLine="true"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
             android:textCursorDrawable="@null" />
@@ -119,8 +119,9 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#FFFFFF"
             android:hint="Mật khẩu"
-            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
             android:singleLine="true"
+            android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
             android:textCursorDrawable="@null" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -143,6 +144,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#FFFFFF"
             android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
             android:singleLine="true"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
@@ -170,8 +172,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#FFFFFF"
             android:hint="Địa chỉ"
-            android:textColor="#FFFFFF"
             android:singleLine="true"
+            android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
             android:textCursorDrawable="@null" />
     </com.google.android.material.textfield.TextInputLayout>

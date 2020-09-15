@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.widget.EditText;
 
 import com.example.datn1.R;
@@ -45,9 +46,10 @@ public class OTPConfirmActivity extends AppCompatActivity {
         setFocusNext(edtOtp5,edtOtp6);
         setFocusNext(edtOtp6,edtOtp2);
         setFocusNext(edtOtp2,edtOtp3);
+        setFocusNext(edtOtp3,edtOtp3);
     }
 
-    private void setFocusNext(EditText edtOtp1, final EditText edtOtp2) {
+    private void setFocusNext(final EditText edtOtp1, final EditText edtOtp2) {
         edtOtp1.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -61,8 +63,14 @@ public class OTPConfirmActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                edtOtp2.requestFocus();
+                if (!checkEmty(edtOtp1.getText().toString())){
+                    edtOtp2.requestFocus();
+                }
             }
         });
+    }
+
+    private boolean checkEmty(String s) {
+        return s.isEmpty();
     }
 }

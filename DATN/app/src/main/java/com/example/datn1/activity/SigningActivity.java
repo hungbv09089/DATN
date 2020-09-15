@@ -25,8 +25,6 @@ public class SigningActivity extends BaseActivity implements View.OnClickListene
 
         initView();
 
-        //set màu cho status bar
-        setMyColorStatusBar(R.color.bg_status_bar);
 
         tvBirthday.setOnClickListener(this);
     }

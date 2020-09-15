@@ -10,6 +10,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 public class BaseActivity extends AppCompatActivity {
+
+
     public void setMyColorStatusBar(int idColor){
         Window window =  getWindow();
 
